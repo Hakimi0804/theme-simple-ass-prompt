@@ -110,7 +110,7 @@ function fish_prompt
     printf "(python:%s) " (set_color blue)(basename $VIRTUAL_ENV)(set_color normal)
   end
 
-  if test $code -eq 127
+  if test $code -ne 0
     set_color red
   end
 
